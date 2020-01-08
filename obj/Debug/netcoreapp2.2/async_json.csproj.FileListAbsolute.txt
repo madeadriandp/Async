@@ -1,0 +1,11 @@
+D:\Users\bsi80091\Documents\dotnet\async_json\bin\Debug\netcoreapp2.2\async_json.deps.json
+D:\Users\bsi80091\Documents\dotnet\async_json\bin\Debug\netcoreapp2.2\async_json.runtimeconfig.json
+D:\Users\bsi80091\Documents\dotnet\async_json\bin\Debug\netcoreapp2.2\async_json.runtimeconfig.dev.json
+D:\Users\bsi80091\Documents\dotnet\async_json\bin\Debug\netcoreapp2.2\async_json.dll
+D:\Users\bsi80091\Documents\dotnet\async_json\bin\Debug\netcoreapp2.2\async_json.pdb
+D:\Users\bsi80091\Documents\dotnet\async_json\obj\Debug\netcoreapp2.2\async_json.csprojAssemblyReference.cache
+D:\Users\bsi80091\Documents\dotnet\async_json\obj\Debug\netcoreapp2.2\async_json.csproj.CoreCompileInputs.cache
+D:\Users\bsi80091\Documents\dotnet\async_json\obj\Debug\netcoreapp2.2\async_json.AssemblyInfoInputs.cache
+D:\Users\bsi80091\Documents\dotnet\async_json\obj\Debug\netcoreapp2.2\async_json.AssemblyInfo.cs
+D:\Users\bsi80091\Documents\dotnet\async_json\obj\Debug\netcoreapp2.2\async_json.dll
+D:\Users\bsi80091\Documents\dotnet\async_json\obj\Debug\netcoreapp2.2\async_json.pdb
