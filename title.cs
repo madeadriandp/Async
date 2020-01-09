@@ -82,14 +82,14 @@ namespace async_json
         public string Bs { get; set; }
     }
 
-    public partial class Untitled1
+    public partial class User
     {
-        public static Untitled1[] FromJson(string json) => JsonConvert.DeserializeObject<Untitled1[]>(json, async_json.Converter.Settings);
+        public static List<User> FromJson(string json) => JsonConvert.DeserializeObject<List<User>>(json, async_json.Converter.Settings);
     }
 
-    public static class Serialize
+    public static class UserSerialize
     {
-        public static string ToJson(this Untitled1[] self) => JsonConvert.SerializeObject(self, async_json.Converter.Settings);
+        public static string ToJson(this List<User> self) => JsonConvert.SerializeObject(self, async_json.Converter.Settings);
     }
 
     internal static class Converter

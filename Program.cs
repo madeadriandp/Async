@@ -69,6 +69,8 @@ namespace async_json
        
         //   }
 
+        getJoinUserPost().GetAwaiter().GetResult();
+
         }
 
         async static Task getJoinUserPost()
@@ -77,18 +79,17 @@ namespace async_json
              var userResponse = await client.GetStringAsync("https://jsonplaceholder.typicode.com/users");
 
              var users = User.FromJson(userResponse);
-             var posts = Post.FromJson(postResponse);
+             var posts = Posts.FromJson(postResponse);
 
              var joinUserPost = posts.Select(e=> {
 
                  var config = new MapperConfiguration (cfg=>
-                 cfg.CreateMap<Post, PostUser>()
+                 cfg.CreateMap<Posts, PostUser>()
                  .ForMember
-                 (
-                     d => d.user,
+                 (   d => d.user,
                      d => d.MapFrom
                      (
-                         x=> users.Find(users.Id == e.UserId)
+                         x=> users.Find(user => user.Id == e.UserId)
                      )
                  )
 
@@ -96,9 +97,7 @@ namespace async_json
 
                  var mapper = config.CreateMapper();
 
-                 return mapper.Map<Post, PostUser>(e);
-
-
+                 return mapper.Map<Posts, PostUser>(e);
              }).ToList();
 
 
